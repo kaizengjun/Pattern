@@ -82,5 +82,5 @@ var singletonTest = SingletonTester.getInstance({
 console.log(singletonTest) //{name: "GingletonTester", pointX: 5, pointY: 10}
 
 console.log(SingletonTester.getInstance({
-  pointX: 8
+    pointX: 8
 }))  //{name: "GingletonTester", pointX: 5, pointY: 10}

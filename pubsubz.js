@@ -52,18 +52,5 @@ var pubsub = {};
     }
 }(pubsub))
 
-// 消息记录器
-var messageLogger = function (topics, data) {
-    console.log("Logging: " + topics + ": " + data);
-};
-
-var subscription = pubsub.subscribe("inbox/newMessage", messageLogger);
-
-pubsub.publish("inbox/newMessage", "hello world!")
-
-pubsub.unsubscribe(subscription)
-
-pubsub.publish("inbox/newMessage", "hello again!")
-
 
 
